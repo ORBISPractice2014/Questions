@@ -1,4 +1,9 @@
-@import "http://webfonts.ru/import/beermoney.css";
+@font-face {
+    font-family: 'Beer money';
+    src: local('beer money'), local('beer money Regular'), url('/fonts/beer_money.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .main-title{
     color: rgba(200,172,76,1);
     font-family: 'Beer money';
