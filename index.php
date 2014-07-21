@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/main.css" rel="stylesheet" >
-    <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
