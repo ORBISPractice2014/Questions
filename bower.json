@@ -1,0 +1,28 @@
+{
+  "name": "Questions",
+  "version": "0.0.0",
+  "authors": [
+    "LonelyGriffin",
+    "klyukvin",
+    "nifontov"
+  ],
+  "description": "The platform for web conference",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "require-less": "*",
+    "requirejs": "*",
+    "bootstrap":"*"
+  }
+}
