@@ -1,0 +1,11 @@
+#status{
+    margin: 0px;
+    padding-left: 20px;
+    line-height: 34px;
+}
+#status.has-success{
+    color:green;
+}
+#status.has-error{
+    color: red;
+}

@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Question</title>
-    <?php include 'links.php' ?>
+    <?php include 'templates/links.php' ?>
+    <link href="./css/index.css" rel="stylesheet" >
 </head>
 
 <body>
-<?php include 'header.php' ?>
+<?php include 'templates/header.php' ?>
 <main class="container">
     <div class="page-header">
         <h1>Новый вопрос</h1>
@@ -24,8 +25,9 @@
         </div>
         <div>
             <button type="submit" class="btn btn-default" id="sendQuestion">Отправить вопрос</button>
+            <label for="sendQuestion" class="control-label" id="status"></label>
         </div>
     </div>
 </main>
-<?php include 'footer.php' ?>
+<?php include 'templates/footer.php' ?>
 </body></html>
