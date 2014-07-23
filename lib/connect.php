@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-</head>
-<body>
 <?
-include("PR.php");
-?>
-
-<?
-    class DBQuestions {
+class DBQuestions {
         private static $mysqli;
 
         public static function connect(){
@@ -35,5 +26,3 @@ include("PR.php");
     }
     DBQuestions::connect();
 ?>
-</body>
-</html>

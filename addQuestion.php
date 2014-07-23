@@ -1,5 +1,5 @@
 <?
-require_once "connect.php";
+require_once "lib/connect.php";
 if(DBQuestions::addQuestion($_POST[inputLogin], $_POST[inputQuestion])){
     print_r("true");
 }else{
