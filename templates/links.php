@@ -2,5 +2,5 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
-<link href="css/main.css" rel="stylesheet" >
-<script src="js/adderQuestion.js"></script>
+<link href="../css/main.css" rel="stylesheet" >
+<script src="../js/adderQuestion.js"></script>

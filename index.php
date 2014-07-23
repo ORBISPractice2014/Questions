@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Question</title>
-    <?php include 'links.php' ?>
+    <?php include 'templates/links.php' ?>
 </head>
 
 <body>
-<?php include 'header.php' ?>
+<?php include 'templates/header.php' ?>
 <main class="container">
     <div class="page-header">
         <h1>Новый вопрос</h1>
@@ -27,5 +27,5 @@
         </div>
     </div>
 </main>
-<?php include 'footer.php' ?>
+<?php include 'templates/footer.php' ?>
 </body></html>
