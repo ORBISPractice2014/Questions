@@ -11,7 +11,7 @@ class DBQuestions {
             $date = date('Y-m-d H:i:s');
             $status = false;
             $id = null;
-            self::$mysqli->query("INSERT INTO questions (`ID`, `Text`, `Date`, `Status`, `Name`) VALUES ('$id', '$text', '$date', '$status', '$name')");
+            return self::$mysqli->query("INSERT INTO questions (`ID`, `Text`, `Date`, `Status`, `Name`) VALUES ('$id', '$text', '$date', '$status', '$name')");
         }
 
         public static function getUnansweredQuestions(){
@@ -21,7 +21,7 @@ class DBQuestions {
         }
 
         public static function changeActiveQuestionStatus() {
-            self::$mysqli->query("UPDATE questions SET Status = 1 WHERE STATUS = 0 ORDER BY DATE LIMIT 1");
+            return self::$mysqli->query("UPDATE questions SET Status = 1 WHERE STATUS = 0 ORDER BY DATE LIMIT 1");
         }
     }
     DBQuestions::connect();
