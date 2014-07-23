@@ -3,6 +3,7 @@
  */
 $(document).ready(function(){
     var forms = $('#questionForms').find('.form-group'),
+        status = $('#questionForms').find("#status"),
         validate = function(){
             var result = true;
             forms.each(function(){
@@ -39,10 +40,12 @@ $(document).ready(function(){
             $.post("./addQuestion.php", getData(), function(data){
                if(data === 'true'){
                    clearForms();
-                   alert("Ваш вопрос добавлен в очередь.");
+                   status.html("Вопрос добавлен в очередь");
+                   status.addClass('has-success').removeClass('has-error');
                }
                else{
-                   alert("Ошибка, вопрос не добавлен в очередь");
+                   status.html("Произошла ошибка попробуйте позже");
+                   status.removeClass('has-success').addClass('has-error');
                }
             });
         }

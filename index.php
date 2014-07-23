@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Question</title>
     <?php include 'templates/links.php' ?>
+    <link href="./css/index.css" rel="stylesheet" >
 </head>
 
 <body>
@@ -24,6 +25,7 @@
         </div>
         <div>
             <button type="submit" class="btn btn-default" id="sendQuestion">Отправить вопрос</button>
+            <label for="sendQuestion" class="control-label" id="status"></label>
         </div>
     </div>
 </main>
