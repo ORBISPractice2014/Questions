@@ -16,6 +16,7 @@ local.properties
 .settings/
 .loadpath
 .idea
+PR.php
 
 # External tool builders
 .externalToolBuilders/
