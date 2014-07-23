@@ -12,6 +12,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Задать вопрос</a></li>
                 <li><a href="/questions.html">Текущие вопросы</a></li>
+                <li><a href="/moderation.php">Модерирование</a></li>
             </ul>
         </div>
     </div>
