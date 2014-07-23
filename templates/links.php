@@ -4,3 +4,4 @@
 
 <link href="../css/main.css" rel="stylesheet" >
 <script src="../js/adderQuestion.js"></script>
+<script src="../js/changerQuestion.js"></script>
