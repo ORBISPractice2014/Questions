@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Question</title>
     <?php include 'templates/links.php' ?>
+    <script src="js/questionsShower.js"></script>
 </head>
 
 <body>
@@ -19,10 +20,10 @@
     <div class="currentQuestion">
         <div class="panel panel-primary" >
             <div class="panel-heading">
-                <h3 class="panel-title"><div class="name" style="float: left"><strong> </strong></div> <div class="time" style=" font-color:rgb(255,255,255); margin-left:20%;"> </div></h3>
+                <h3 class="panel-title"><div class="name" style="float: left"></div> <div class="time" style=" font-color:rgb(255,255,255); margin-left:20%;"> </div></h3>
             </div>
             <div class="panel-body">
-                <b> </b>
+
             </div>
         </div>
     </div>
@@ -30,13 +31,6 @@
 
 
     <div class="questionQuery">
-            <div class="panel panel-info">
-            <div class="panel-heading"> <div class="name" style="float: left"> <strong>  </strong> </div> <div class="time" style="margin-left:20%"><small>  </small> </div>
-            </div>
-            <div class="panel-body">
-                <b>  </b>
-            </div>
-        </div>
 
     </div>
 </main>
