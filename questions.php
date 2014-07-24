@@ -15,16 +15,13 @@
         <h1>Текущие вопросы</h1>
     </div>
 
-    <?php include 'lib/connect.php'; ?>
-    <?php $unansweredQuestions=DBQuestions::getUnansweredQuestions();?>
-
     <div class="currentQuestion">
         <div class="panel panel-primary" >
             <div class="panel-heading">
-                <h3 class="panel-title"><div class="name" style="float: left"><strong><?php echo $unansweredQuestions[0][3] ?></strong></div> <div class="time" style=" font-color:rgb(255,255,255); margin-left:20%;"><?php echo $unansweredQuestions[0][1] ?></div></h3>
+                <h3 class="panel-title"><div class="name" style="float: left"><strong> </strong></div> <div class="time" style=" font-color:rgb(255,255,255); margin-left:20%;"> </div></h3>
             </div>
             <div class="panel-body">
-                <b> <?php echo $unansweredQuestions[0][0] ?> </b>
+                <b> </b>
             </div>
         </div>
     </div>
@@ -32,16 +29,14 @@
 
 
     <div class="questionQuery">
-        <?php for($i=1;$i<count($unansweredQuestions);$i++) { ?>
-        <?php $t=$unansweredQuestions[i]; ?>
-        <div class="panel panel-info">
-            <div class="panel-heading"> <div class="name" style="float: left"> <strong> <?php echo $unansweredQuestions[$i][3]?> </strong> </div> <div class="time" style="margin-left:20%"><small> <?php   echo $unansweredQuestions[$i][1];?> </small> </div>
+            <div class="panel panel-info">
+            <div class="panel-heading"> <div class="name" style="float: left"> <strong>  </strong> </div> <div class="time" style="margin-left:20%"><small>  </small> </div>
             </div>
             <div class="panel-body">
-                <b> <?php echo $unansweredQuestions[$i][0] ?> </b>
+                <b>  </b>
             </div>
         </div>
-        <?php } ?>
+
     </div>
 </main>
 
