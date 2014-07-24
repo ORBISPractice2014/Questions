@@ -41,11 +41,11 @@ $(document).ready(function(){
                if(data === 'true'){
                    clearForms();
                    status.html("Вопрос добавлен в очередь");
-                   status.addClass('has-success').removeClass('has-error');
+                   status.addClass('text-success').removeClass('text-danger');
                }
                else{
                    status.html("Произошла ошибка попробуйте позже");
-                   status.removeClass('has-success').addClass('has-error');
+                   status.removeClass('text-success').addClass('text-danger');
                }
             });
         }
