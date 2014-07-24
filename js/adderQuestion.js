@@ -16,6 +16,10 @@ $(document).ready(function(){
                     result = false;
                 }
             });
+            if(!result){
+                status.html("Есть не заполненые поля.");
+                status.removeClass('text-success').addClass('text-danger');
+            }
             return result;
         },
         getData = function(){
