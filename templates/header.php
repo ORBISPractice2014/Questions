@@ -1,3 +1,10 @@
+<?
+    $arNav = array(
+        "Задать вопрос" => "/",
+        "Текущие вопросы" => "/questions.php",
+        "Модерирование" => "/moderation.php"
+    )
+?>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -10,9 +17,9 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Задать вопрос</a></li>
-                <li><a href="/questions.php">Текущие вопросы</a></li>
-                <li><a href="/moderation.php">Модерирование</a></li>
+                <?foreach($arNav as $key => $value):?>
+                <li <?if($value === $navpage) echo 'class="active"'?>><a href="<?=$value?>"><?=$key?></a></li>
+                <?endforeach?>
             </ul>
         </div>
     </div>

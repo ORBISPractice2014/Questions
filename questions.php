@@ -1,3 +1,4 @@
+<? $navpage = "/questions.php"; ?>
 <!DOCTYPE html>
 <!-- saved from url=(0054)http://getbootstrap.com/examples/sticky-footer-navbar/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
