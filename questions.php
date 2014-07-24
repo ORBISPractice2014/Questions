@@ -18,14 +18,7 @@
     </div>
 
     <div class="currentQuestion">
-        <div class="panel panel-primary" >
-            <div class="panel-heading">
-                <h3 class="panel-title"><div class="name" style="float: left"></div> <div class="time" style=" font-color:rgb(255,255,255); margin-left:20%;"> </div></h3>
-            </div>
-            <div class="panel-body">
 
-            </div>
-        </div>
     </div>
 
 
@@ -33,6 +26,11 @@
     <div class="questionQuery">
 
     </div>
+
+    <div class="message">
+
+    </div>
+
 </main>
 
 
