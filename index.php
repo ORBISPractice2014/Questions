@@ -29,7 +29,7 @@
                     <textarea class="form-control" rows="3" id="inputQuestion"></textarea>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-default" id="sendQuestion">Отправить вопрос</button>
+                    <a class="btn btn-primary btn-lg" role="button" id="sendQuestion">Отправить вопрос</a>
                     <label for="sendQuestion" class="control-label" id="status"></label>
                 </div>
             </div>

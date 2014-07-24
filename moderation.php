@@ -12,8 +12,9 @@
 <body>
 <? include 'templates/header.php' ?>
 <main class="container">
-    <div>
-        <button type="submit" class="btn btn-default" id="changeQuestion">Сменить вопрос</button>
+    <div id="changingQuestion">
+        <a class="btn btn-primary btn-lg" role="button" id="changeQuestion">Сменить вопрос</a>
+        <label for="changeQuestion" class="control-label" id="status"></label>
     </div>
 </main>
 <? include 'templates/footer.php' ?>
