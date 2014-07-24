@@ -4,7 +4,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Question</title>
+    <title>Questions</title>
     <?php include 'templates/links.php' ?>
     <link href="./css/index.css" rel="stylesheet" >
     <script src="../js/adderQuestion.js"></script>
