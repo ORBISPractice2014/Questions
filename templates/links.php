@@ -3,5 +3,3 @@
 <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
 <link href="../css/main.css" rel="stylesheet" >
-<script src="../js/adderQuestion.js"></script>
-<script src="../js/changerQuestion.js"></script>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moderation</title>
     <? include 'templates/links.php' ?>
+    <script src="../js/changerQuestion.js"></script>
 </head>
 
 <body>

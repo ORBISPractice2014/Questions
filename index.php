@@ -6,6 +6,8 @@
     <title>Question</title>
     <?php include 'templates/links.php' ?>
     <link href="./css/index.css" rel="stylesheet" >
+    <script src="../js/adderQuestion.js"></script>
+
 </head>
 
 <body>
