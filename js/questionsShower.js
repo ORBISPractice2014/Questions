@@ -1,6 +1,10 @@
 $(document).ready(function() {
+    var data = [{
+        'name': 'key',
+        'value':'questionShower'
+    }];
     var update=function() {
-        $.post('questionsShower.php',function(data) {
+        $.post('server.php',data, function(data) {
                 var data=JSON.parse(data),
                     questions = data['questions'],
                     curentQuestion = $('.currentQuestion'),
