@@ -12,8 +12,8 @@ $(document).ready(function() {
 
             for(var i=0;i<questions.length;i++) {
                 moderateQuestions.append('<div class="list-group-item">'+
-                                            '<h4 class="list-group-item-heading">'+questions[0][4]+ ' '+ questions[0][1]+' </h4>'+
-                                            '<p class="list-group-item-text">'+questions[0][0]+'</p>'+
+                                            '<h4 class="list-group-item-heading">'+questions[i][4]+ ' '+ questions[i][1]+' </h4>'+
+                                            '<p class="list-group-item-text">'+questions[i][0]+'</p>'+
                                             '<div class="btn-group btn-group-xs">'+
                                                 '<button type="button" class="btn btn-default add" data-id="'+questions[i][5]+'">Принять</button>'+
                                                 '<button type="button" class="btn btn-default del" data-id="'+questions[i][5]+'">Отклонить</button>'+
