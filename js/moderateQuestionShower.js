@@ -23,31 +23,37 @@ $(document).ready(function() {
 
             }
             moderateQuestions.find(".add").click(function(){
+                var id=$(this).data('id');
                 var data = [{
                     'name': 'key',
                     'value':'add'
                 },
                 {
                     'name': 'id',
-                    'value': $(this).data('id')
+                    'value': id
                 }
                 ];
                 $.post('server.php', data, function(data){
-
+                    if('true'){
+                        $('[data-id='+id+']').parent().parent().remove();
+                    }
                 });
             });
             moderateQuestions.find(".del").click(function(){
+                var id=$(this).data('id');
                 var data = [{
                     'name': 'key',
                     'value':'del'
                 },
                 {
                     'name': 'id',
-                    'value': $(this).data('id')
+                    'value': id
                 }
                 ];
                 $.post('server.php', data, function(data){
-
+                      if('true'){
+                          $('[data-id='+id+']').parent().parent().remove();
+                      }
                 });
             });
             moderateQuestions.find('div.list-group-item').wrapAll(' <div class="col-sm-4> <div class="list-group">');

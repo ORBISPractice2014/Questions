@@ -18,13 +18,7 @@
         <h1>Текущие вопросы</h1>
     </div>
 
-    <div class="currentQuestion">
-
-    </div>
-
-
-
-    <div class="questionQuery">
+   <div class="questionQuery">
 
     </div>
 
