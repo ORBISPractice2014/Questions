@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <? $navpage = "/questions.php"; ?>
 <!DOCTYPE html>
 <!-- saved from url=(0054)http://getbootstrap.com/examples/sticky-footer-navbar/ -->

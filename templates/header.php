@@ -1,3 +1,4 @@
+
 <?
     $arNav = array(
         "Текущие вопросы" => "/",
@@ -21,6 +22,14 @@
                 <li <?if($value === $navpage) echo 'class="active"'?>><a href="<?=$value?>"><?=$key?></a></li>
                 <?endforeach?>
             </ul>
+            <?if(isset($_SESSION['auth'])):?>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <span><a class="btn btn-primary" style="margin: 10px;" role="button" id="logOut">Выйти</a></span>
+                </li>
+            </ul>
+            <script src="../js/logout.js"></script>
+            <?endif?>
         </div>
     </div>
 </nav>
