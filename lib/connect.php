@@ -11,8 +11,7 @@ class DBQuestions {
         $date = date('Y-m-d H:i:s');
         $status = 0;
         $id = null;
-        $moderationDate = null;
-        return self::$mysqli->query("INSERT INTO questions (`ID`, `Text`, `Date`, `ModerationDate`, `Status`, `Name`) VALUES ('$id', '$text', '$date', '$moderationDate', '$status', '$name')");
+        return self::$mysqli->query("INSERT INTO questions (`ID`, `Text`, `Date`, `ModerationDate`, `Status`, `Name`) VALUES ('$id', '$text', '$date', NULL, '$status', '$name')");
     }
 
     public static function getUnansweredQuestions(){
