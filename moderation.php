@@ -7,16 +7,25 @@
     <title>Questions</title>
     <? include 'templates/links.php' ?>
     <script src="js/changerQuestion.js"></script>
+
 </head>
 
 <body>
 <? include 'templates/header.php' ?>
 <main class="container">
 <?if(isset($_SESSION['auth'])){?>
-    <div id="changingQuestion">
-        <a class="btn btn-primary btn-lg" role="button" id="changeQuestion">Сменить вопрос</a>
-        <label for="changeQuestion" class="control-label" id="status"></label>
-    </div>
+    <script src="js/moderateQuestionShower.js"></script>
+
+        <div id="changingQuestion">
+            <a class="btn btn-primary btn-lg" role="button" id="changeQuestion">Сменить вопрос</a>
+            <label for="changeQuestion" class="control-label" id="status"></label>
+        </div>
+        <br>
+
+        <div class="moderateQuestions row">
+
+        </div>
+
 <?} else {?>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">

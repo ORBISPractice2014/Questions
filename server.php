@@ -45,5 +45,29 @@ switch($_POST["key"]){
         unset($_SESSION['auth']);
         print_r("true");
         break;
+    case "moderateQuestionShower":
+        $questions=DBQuestions::getModerationList();
+        print_r('{"questions":'.json_encode($questions).'}');
+    break;
+    case "add":
+        if(isset($_SESSION['auth']) && isset($_POST['id'])){
+            if(DBQuestions::approveQuestion($_POST['id'])) {
+                    print_r("true");
+                }
+                else {
+                    print_r("false");
+                }
+            }
+    break;
+    case "del":
+        if(isset($_SESSION['auth']) && isset($_POST['id'])){
+            if(DBQuestions::removeQuestion($_POST['id'])) {
+                print_r("true");
+            }
+            else {
+                print_r("false");
+            }
+        }
+        break;
 }
 ?>
