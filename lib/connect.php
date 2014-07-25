@@ -11,6 +11,8 @@ class DBQuestions {
         $date = date('Y-m-d H:i:s');
         $status = 0;
         $id = null;
+        $text = mysql_real_escape_string($text);
+        $name = mysql_real_escape_string($name);
         return self::$mysqli->query("INSERT INTO questions (`ID`, `Text`, `Date`, `ModerationDate`, `Status`, `Name`) VALUES ('$id', '$text', '$date', NULL, '$status', '$name')");
     }
 
