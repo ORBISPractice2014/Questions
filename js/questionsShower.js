@@ -30,6 +30,7 @@ $(document).ready(function() {
                     message.empty();
                 }
                 else {
+                    curentQuestion.empty();
                     message.html('<div class="alert alert-info">'+
                     'На данный момент нет неотвеченных вопросов.'+
                     '</div>');
