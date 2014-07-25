@@ -41,7 +41,12 @@ $(document).ready(function(){
         };
    $('#sendQuestion').click(function(){
         if(validate()) {
-            $.post("./addQuestion.php", getData(), function(data){
+            var data = getData();
+            data.push({
+                'name': 'key',
+                'value': 'addQuestion'
+            });
+            $.post("./server.php", data, function(data){
                if(data === 'true'){
                    clearForms();
                    status.html("Вопрос добавлен в очередь");
