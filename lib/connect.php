@@ -15,7 +15,7 @@ class DBQuestions {
     }
 
     public static function getUnansweredQuestions(){
-        if ($result = self::$mysqli->query("SELECT * FROM  questions WHERE STATUS = 1 ORDER BY DATE")) {
+        if ($result = self::$mysqli->query("SELECT * FROM  questions WHERE STATUS = 1 ORDER BY MODERATIONDATE")) {
             return $result->fetch_all();
         }
     }
@@ -29,6 +29,12 @@ class DBQuestions {
             return false;
         } else {
             return true;
+        }
+    }
+
+    public static function getModerationList() {
+        if ($result = self::$mysqli->query("SELECT * FROM  questions WHERE STATUS = 0 ORDER BY DATE")) {
+            return $result->fetch_all();
         }
     }
 
